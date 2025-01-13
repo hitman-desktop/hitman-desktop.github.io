@@ -1,12 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hitman</title>
+    <meta name="description" content="hitman - The ultimate Open Source API testing and load testing tool">
+    <title>hitman | Open Source API Testing Tool</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+        }
+        header {
+            background-color: #1e1e1e;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.2rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        nav a:hover {
+            color: #62dafb;
+        }
+
+        main {
+            margin: 0 10rem 2rem 10rem;
+            padding: 40px 20px;
+            text-align: left;
+        }
+
+        .screenshot-placeholder {
+            width: 100%;
+            max-width: 800px;
+            align-items: start;
+            margin: 20px 10px;
+            background-color: #282828;
+            border: 2px dashed #555555;
+            display: flex;
+            /*justify-content: center;*/
+            /*align-items: center;*/
+            color: #888888;
+            font-size: 1.2rem;
+        }
+        .screenshot-image {
+            width: 100%;
+            object-fit: contain;
+            height: 100%;
+        }
+        footer {
+            background-color: #1e1e1e;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Welcome to Hitman</h1>
-    <p>This is the official site for Hitman.</p>
+    <header>
+        <h1>hitman</h1>
+        <p>The Open Source API testing and load testing tool</p>
+    </header>
+
+    <main>
+        <section id="welcome">
+            <h2>Welcome to hitman</h2>
+            <p>hitman is a powerful and intuitive tool designed to help you perform API testing and simple load testing with ease. As an
+                open-source solution, it is freely available for developers worldwide.</p>
+        </section>
+        <section id="features">
+            <h2>Features</h2>
+            <ul style="text-align: left; max-width: 600px;">
+                <li>Design, test, and validate API requests with ease.</li>
+                <li>Built-in load testing for constant and ramp-up scenarios.</li>
+                <li>Dynamic post-request scripting support.</li>
+                <li>Detailed results with metrics and 90th percentile analysis.</li>
+                <li>Multiple profile support.</li>
+            </ul>
+        </section>
+        <section id="screenshots">
+            <h2>Application Screenshots</h2>
+            <div class="screenshot-placeholder">
+                <img class="screenshot-image" src="images/hitman-api-test.png"/>
+            </div>
+            <div class="screenshot-placeholder">
+                <img class="screenshot-image" src="images/hitman-load-test.png"/>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>We welcome your contributions. <a href="https://github.com/hitman-desktop/hitman">Contribute on GitHub</a>
+        </p>
+    </footer>
 </body>
+
 </html>
